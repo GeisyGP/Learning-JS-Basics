@@ -1,12 +1,5 @@
-function showPrimes(limit){
-    for (let number = 2; number <= limit; number++){
-        if (isPrime(number)) console.log(number);
-    }
-}
-function isPrime(number) {
-    for (let factor = 2; factor < number; factor++)
-        if (number % factor === 0)
-            return false;
-    return true;
-}
-showPrimes(20);
+const now = new Date();
+const date1 = new Date("May 11 2018 09:00");
+const date2 = new Date(2018, 4, 11, 9);
+
+now.setFullYear(2017);
