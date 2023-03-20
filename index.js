@@ -1,14 +1,12 @@
-let role = "moderator";
-
-switch (role) {
-    case "guest":
-        console.log("Usuário convidado");
-        break;
-
-    case "moderator":
-        console.log("Usuário moderador");
-        break;
-
-    default:
-        console.log("Usuário desconhecido");
+function showPrimes(limit){
+    for (let number = 2; number <= limit; number++){
+        if (isPrime(number)) console.log(number);
+    }
 }
+function isPrime(number) {
+    for (let factor = 2; factor < number; factor++)
+        if (number % factor === 0)
+            return false;
+    return true;
+}
+showPrimes(20);
