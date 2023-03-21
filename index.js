@@ -1,11 +1,5 @@
-let faixaPreço = [
-    { limiteMin: 0, limiteMax: 50, rotulo: "$", tooltip: "Preço barato" }, 
-    { limiteMin: 51, limiteMax: 150, rotulo: "$$", tooltip: "Preço moderado" },
-    { limiteMin: 151, limiteMax: 151, rotulo: "$$$", tooltip: "Preço elevado" }
-]
+const precos = [1, 3, 2, 6];
 
-let produto = [
-    { preçoProduto: 32 }
-]
+const soma = precos.reduce((accumulator, currentValue) => accumulator + currentValue);
 
-console.log(faixaPreço);
+console.log(soma);
