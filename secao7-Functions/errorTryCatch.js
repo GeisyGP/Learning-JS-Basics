@@ -6,7 +6,7 @@ const numbers = undefined;
 let count;
 
 function countOccurrences(array, searchElement) {
-    if(typeof array != "object")
+    if(!Array.isArray(array))
         throw new Error("Array is not a array.")
 
     return array.reduce((accumulator, currentValue) => {
